@@ -1,0 +1,167 @@
+INFO:root:Server Started listening to new connections...
+Set Boot Flag %b False
+INFO:root:Protocols Matched: ocpp1.6
+INFO:ocpp:73704009: receive message [2, "73704009-20210115T092857-189492533", "BootNotification", {
+		"chargePointModel":	"EVC32NK",
+		"chargePointVendor":	"EVPOWER",
+		"firmwareVersion":	"WEB20200910V1.00",
+		"chargePointSerialNumber":	"EG3A508247",
+		"protocolVersion":	"1.16",
+		"chargerId":	"73704009",
+		"chargerIp":	"192.168.1.101",
+		"mac":	"32-3b-55-6a-69-6b",
+		"chargerTime":	"2021-01-15T09:28:57Z"
+	}]
+Set Boot Flag is True
+INFO:ocpp:73704009: send [3,"73704009-20210115T092857-189492533",{"currentTime":"2021-01-15T09:28:59.401015","interval":60,"status":"Accepted"}]
+INFO:ocpp:73704009: receive message [2, "73704009-20210115T092859-3753073077", "StatusNotification", {
+		"connectorId":	0,
+		"errorCode":	"NoError",
+		"info":	"0",
+		"status":	"Available",
+		"timestamp":	"2021-01-15T09:28:59Z",
+		"subMode":	{
+			"connectorFeedback":	"Unplugged",
+			"supportCurrent":	0,
+			"parkSensor":	"NotImplemented",
+			"groundLock":	"NotImplemented",
+			"cableLock":	"NotImplemented"
+		},
+		"lastChargingCycle":	12
+	}]
+INFO:ocpp:73704009: send [3,"73704009-20210115T092859-3753073077",{}]
+INFO:ocpp:73704009: receive message [2, "73704009-20210115T092859-2923054361", "StatusNotification", {
+		"connectorId":	1,
+		"errorCode":	"NoError",
+		"info":	"0",
+		"status":	"Available",
+		"timestamp":	"2021-01-15T09:28:59Z",
+		"subMode":	{
+			"connectorFeedback":	"Unplugged",
+			"supportCurrent":	0,
+			"parkSensor":	"NotImplemented",
+			"groundLock":	"NotImplemented",
+			"cableLock":	"NotImplemented"
+		},
+		"lastChargingCycle":	12
+	}]
+INFO:ocpp:73704009: send [3,"73704009-20210115T092859-2923054361",{}]
+INFO:ocpp:73704009: receive message [2, "73704009-20210115T092900-4259760192", "MeterValues", {
+		"connectorId":	1,
+		"meterValue":	[{
+				"timestamp":	"2021-01-15T09:29:00Z",
+				"sampledValue":	[{
+						"value":	"7040",
+						"context":	"Sample.Clock",
+						"measurand":	"Power.Offered",
+						"unit":	"W"
+					}]
+			}]
+	}]
+INFO:ocpp:73704009: send [3,"73704009-20210115T092900-4259760192",{}]
+INFO:ocpp:73704009: receive message [2, "73704009-20210115T092930-742715041", "MeterValues", {
+		"connectorId":	1,
+		"meterValue":	[{
+				"timestamp":	"2021-01-15T09:29:30Z",
+				"sampledValue":	[{
+						"value":	"7040",
+						"context":	"Sample.Clock",
+						"measurand":	"Power.Offered",
+						"unit":	"W"
+					}]
+			}]
+	}]
+INFO:ocpp:73704009: send [3,"73704009-20210115T092930-742715041",{}]
+INFO:ocpp:73704009: receive message [2, "73704009-20210115T092933-2704410610", "Heartbeat", {
+}]
+INFO:ocpp:73704009: send [3,"73704009-20210115T092933-2704410610",{"currentTime":"2021-01-15T09:29:34.229967"}]
+INFO:ocpp:73704009: receive message [2, "73704009-20210115T093000-553571434", "MeterValues", {
+		"connectorId":	1,
+		"meterValue":	[{
+				"timestamp":	"2021-01-15T09:30:00Z",
+				"sampledValue":	[{
+						"value":	"7040",
+						"context":	"Sample.Clock",
+						"measurand":	"Power.Offered",
+						"unit":	"W"
+					}]
+			}]
+	}]
+INFO:ocpp:73704009: send [3,"73704009-20210115T093000-553571434",{}]
+INFO:ocpp:73704009: receive message [2, "73704009-20210115T093030-3053360538", "MeterValues", {
+		"connectorId":	1,
+		"meterValue":	[{
+				"timestamp":	"2021-01-15T09:30:30Z",
+				"sampledValue":	[{
+						"value":	"7040",
+						"context":	"Sample.Clock",
+						"measurand":	"Power.Offered",
+						"unit":	"W"
+					}]
+			}]
+	}]
+INFO:ocpp:73704009: send [3,"73704009-20210115T093030-3053360538",{}]
+INFO:ocpp:73704009: receive message [2, "73704009-20210115T093033-1438164513", "Heartbeat", {
+}]
+INFO:ocpp:73704009: send [3,"73704009-20210115T093033-1438164513",{"currentTime":"2021-01-15T09:30:34.234144"}]
+INFO:ocpp:73704009: receive message [2, "73704009-20210115T093100-2546684096", "MeterValues", {
+		"connectorId":	1,
+		"meterValue":	[{
+				"timestamp":	"2021-01-15T09:31:00Z",
+				"sampledValue":	[{
+						"value":	"7040",
+						"context":	"Sample.Clock",
+						"measurand":	"Power.Offered",
+						"unit":	"W"
+					}]
+			}]
+	}]
+INFO:ocpp:73704009: send [3,"73704009-20210115T093100-2546684096",{}]
+ERROR:websockets.server:Error in connection handler
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/websockets/protocol.py", line 827, in transfer_data
+    message = await self.read_message()
+  File "/usr/local/lib/python3.7/dist-packages/websockets/protocol.py", line 895, in read_message
+    frame = await self.read_data_frame(max_size=self.max_size)
+  File "/usr/local/lib/python3.7/dist-packages/websockets/protocol.py", line 971, in read_data_frame
+    frame = await self.read_frame(max_size)
+  File "/usr/local/lib/python3.7/dist-packages/websockets/protocol.py", line 1051, in read_frame
+    extensions=self.extensions,
+  File "/usr/local/lib/python3.7/dist-packages/websockets/framing.py", line 105, in read
+    data = await reader(2)
+  File "/usr/lib/python3.7/asyncio/streams.py", line 679, in readexactly
+    await self._wait_for_data('readexactly')
+  File "/usr/lib/python3.7/asyncio/streams.py", line 473, in _wait_for_data
+    await self._waiter
+concurrent.futures._base.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/dist-packages/websockets/server.py", line 191, in handler
+    await self.ws_handler(self, path)
+  File "/home/pi/Downloads/OCPP_Server_Setup-master/central_system.py", line 108, in on_connect
+    await cp.start()
+  File "/home/pi/Downloads/OCPP_Server_Setup-master/ocpp/charge_point.py", line 123, in start
+    message = await self._connection.recv()
+  File "/usr/local/lib/python3.7/dist-packages/websockets/protocol.py", line 509, in recv
+    await self.ensure_open()
+  File "/usr/local/lib/python3.7/dist-packages/websockets/protocol.py", line 812, in ensure_open
+    raise self.connection_closed_exc()
+websockets.exceptions.ConnectionClosedError: code = 1006 (connection closed abnormally [internal]), no reason
+INFO:root:Protocols Matched: ocpp1.6
+INFO:ocpp:73704009: receive message [2, "73704009-20210115T093108-4153566325", "BootNotification", {
+		"chargePointModel":	"EVC32NK",
+		"chargePointVendor":	"EVPOWER",
+		"firmwareVersion":	"WEB20200910V1.00",
+		"chargePointSerialNumber":	"EG3A508247",
+		"protocolVersion":	"1.16",
+		"chargerId":	"73704009",
+		"chargerIp":	"192.168.1.101",
+		"mac":	"32-3b-55-6a-69-6b",
+		"chargerTime":	"2021-01-15T09:31:08Z"
+	}]
+Set Boot Flag is True
+INFO:ocpp:73704009: send [3,"73704009-20210115T093108-4153566325",{"currentTime":"2021-01-15T09:31:09.860620","interval":60,"status":"Accepted"}]
+INFO:ocpp:73704009: receive message [2, "73704009-20210115T093109-382614808", "StatusNotification", {
+		"connectorId":	0,
